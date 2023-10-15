@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" type="text/css" href="/styles/comprovante.css" />
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/html2canvas/1.2.2/html2canvas.min.js"></script>
+
+    <title>Comprovante de Pagamento</title>
+</head>
+<body>
+    <header>
+        <div class="image-container">
+            <a href="/catalogo.html"> <img class="blue" alt="logofundo" src="assets/img/Logo blue.PNG" /></a>
+        </div>
+    </header>
+    
+        <h1>Comprovante de Pagamento</h1>
+        <h2>Encaminhar esses dados e o comprovante de PIX e para o número (85) 997229859</h2>
+        <div id="elemento-para-capturar" >
+        <div id="dados-comprovante" class="card" style="margin-left: 0px">
+            <!-- Seus dados do comprovante aqui -->
+        </div>
+    </div>
+    
+   
+    
+    <button id="capturar" class="cap">Capturar</button>
+    <div id="captura-de-tela"></div>
+    
+ <a id="download-link" style="display: none">Download Captura de Tela</a>
+
+
+ 
+ 
+    <script src="src/comprovante.js"></script>
+</body>
+</html>

@@ -1,0 +1,109 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" type="text/css" href="/styles/checkout.css" />
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.1/css/all.min.css">
+
+    <title>Checkout</title>
+</head>
+<body>
+   
+    <header>
+        <div class="image-container">
+           <a href="/catalogo.html"> <img class="blue" alt="logofundo" src="assets/img/Logo blue.PNG" /></a>
+        </div>
+    </header>
+   
+    <div class="container">
+        <div class="section">
+            <h1>Resumo da Compra</h1>
+            <div id="itens-carrinho">
+                <!-- Os itens do carrinho serão adicionados aqui -->
+            </div>
+            <div id="total-carrinho">Total: R$ <span id="valor-total">0.00</span></div>
+
+
+
+            <h3> Valor da Entrega: R$ 10,00 </h3>
+        </div>
+
+        <div class="section">
+            <h2>Formulário de Recolhimento de Dados</h2>
+            <form action="processar.php" method="POST">
+                <div class="form-group">
+                    <label for="nome">Nome:</label>
+                    <input type="text" id="nome" name="nome" required>
+                </div>
+        
+                <div class="form-group">
+                    <label for="email">E-mail:</label>
+                    <input type="email" id="email" name="email" required>
+                </div>
+        
+                <div class="form-group">
+                    <label for="telefone">Telefone:</label>
+                    <input type="tel" id="telefone" name="telefone" required>
+                </div>
+        
+               <!-- Adicione o campo de endereço de entrega -->
+        <div class="form-group">
+            <label for="endereco-entrega">Endereço de Entrega:</label>
+            <input type="text" id="endereco-entrega" name="endereco-entrega" required>
+        </div>
+       
+    </form>
+        </div>
+       
+
+        <div class="section">
+            <h2>Formulário de Pagamento</h2>
+            <form action="processar.php" method="POST">
+                <div class="form-group">
+                    <label for="forma-pagamento">Forma de Pagamento:</label>
+                    <select id="forma-pagamento" name="forma-pagamento" required>
+                        <option value="">Selecione uma forma de pagamento</option>
+                        <option value="cartao">Cartão de Crédito</option>
+                        <option value="boleto">Boleto Bancário</option>
+                        <option value="pix">PIX</option>
+                    </select>
+                </div>
+                
+                <!-- Exibir imagem e link do QR Code do PIX -->
+                <div class="pix" id="pix-info" style="display: none;">
+                    <img class="qrpix" src="assets/img/pix.jpg" alt="QR Code PIX">
+                        
+                    <p class="epix">EMAIL: vitoriadbrito@hotmail.com <i class="far fa-copy" id="copyIcon"></i></p>
+                        
+                    <a class="linkpix" href="https://picpay.me/vit.brito" target="_blank" style="margin-top: 8px;">LINK</a>
+                </div>
+                <div id="dados-cartao" style="display: none;">
+                    <div class="form-group">
+                        <label for="numero-cartao">Número do Cartão:</label>
+                        <input type="text" id="numero-cartao" name="numero-cartao" required>
+                    </div>
+        
+                    <div class="form-group">
+                        <label for="nome-titular">Nome do Titular:</label>
+                        <input type="text" id="nome-titular" name="nome-titular" required>
+                    </div>
+        
+                    <div class="form-group">
+                        <label for="validade-cartao">Data de Validade:</label>
+                        <input type="text" id="validade-cartao" name= "validade-cartao" required>
+                    </div>
+        
+                    <div class="form-group">
+                        <label for="cvv-cartao">CVV:</label>
+                        <input type="text" id="cvv-cartao" name="cvv-cartao" required>
+                    </div>
+                </div>
+        
+                <button type="submit" id="finalizar" onclick="window.location.href='comprovante.html'">Finalizar Pagamento</button>
+            </form>
+        </div>
+    </div>
+    <script src="src/checkout.js"></script>
+</body>
+</html>

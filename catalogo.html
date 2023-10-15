@@ -1,0 +1,154 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8" />
+    
+    <link rel="stylesheet" type="text/css" href="/styles/cat.css" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Anton&family=Bebas+Neue&family=Goldman&family=Josefin+Sans&family=Jost:wght@300;500&family=Lexend+Giga:wght@100;500&family=Major+Mono+Display&family=Oxanium:wght@500&family=Rubik+80s+Fade&family=Rubik+Dirt&display=swap" rel="stylesheet">
+    <link
+    rel="stylesheet"
+    href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/css/all.min.css"
+    integrity="sha512-z3gLpd7yknf1YoNbCzqRKc4qyor8gaKU1qmn+CShxbuBusANI9QpRohGBreCFkKxLhei6S9CQXFEbbKuqLg0DA=="
+    crossorigin="anonymous"
+    referrerpolicy="no-referrer"
+  />
+  
+
+    <title>Catálogo</title>
+</head>
+<body>
+  
+  <header>
+    <div class="image-container">
+      <img class="blue" alt="logofundo" src="assets/img/Logo blue.PNG" />
+    </div>
+    <div class="elipse-container">
+      <img class="user" alt="logofundo" src="assets/img/user.png">
+      <img class="cart" alt="Carrinho" src="assets/img/cart.png" onclick="toggleCarrinho()">
+    </div>
+  </header>
+  <div class="alert-banner">
+    <p class="alert-text">Frete grátis para compras acima de R$ 50,00!</p>
+</div>
+  
+  <div class="carrinho" id="carrinho">
+    <h2>CARRINHO</h2>
+    <ul id="carrinho-itens" class="carrinho-lista">
+      <!-- Os produtos serão adicionados aqui -->
+    </ul>
+    <div class="total-cont">
+    <p>TOTAL: <span id="total-carrinho"> R$ 0.00</span></p></div>
+    
+    <a href="checkout.html" class="finalizar-compra-button">Finalizar Compra</a>
+  </div>
+  
+  <div class="card-container">
+    <div class="card">
+      <img src="assets/img/l1.jpg" alt="Image 1">
+      <div class="card-content">
+        <h3>Produto 1</h3>
+        <p>Descrição do Produto 1</p>
+        <p class="price">R$ 9.99</p>
+        <button class="cart-button">
+          <i class="fas fa-cart-plus"></i> Adicionar ao Carrinho
+        </button>
+      </div>
+    </div>
+    <div class="card">
+      <img src="assets/img/l2.jpg" alt="Image 2">
+      <div class="card-content">
+        <h3>Produto 2</h3>
+        <p>Descrição do Produto 2</p>
+        <p class="price">R$ 9.99</p>
+        <button class="cart-button">
+          <i class="fas fa-cart-plus"></i> Adicionar ao Carrinho
+        </button>
+      </div>
+    </div>
+    <div class="card">
+      <img src="assets/img/l4.jpg" alt="Image 3">
+      <div class="card-content">
+        <h3>Produto 2</h3>
+        <p>Descrição do Produto 3</p>
+        <p class="price">R$ 9.99</p>
+        <button class="cart-button">
+          <i class="fas fa-cart-plus"></i> Adicionar ao Carrinho
+        </button>
+      </div>
+    </div>
+    <div class="card">
+      <img src="assets/img/p1.jpg" alt="Image 3">
+      <div class="card-content">
+        <h3>Produto 2</h3>
+        <p>Descrição do Produto 3</p>
+        <p class="price">R$ 9.99</p>
+        <button class="cart-button">
+          <i class="fas fa-cart-plus"></i> Adicionar ao Carrinho
+        </button>
+      </div>
+    </div>
+    <div class="card">
+      <img src="assets/img/l5.jpg" alt="Image 3">
+      <div class="card-content">
+        <h3>Produto 2</h3>
+        <p>Descrição do Produto 3</p>
+        <p class="price">R$ 9.99</p>
+        <button class="cart-button">
+          <i class="fas fa-cart-plus"></i> Adicionar ao Carrinho
+        </button>
+      </div>
+    </div>
+    <div class="card">
+      <img src="assets/img/l6.jpg" alt="Image 3">
+      <div class="card-content">
+        <h3>Produto 2</h3>
+        <p>Descrição do Produto 3</p>
+        <p class="price">R$ 9.99</p>
+        <button class="cart-button">
+          <i class="fas fa-cart-plus"></i> Adicionar ao Carrinho
+        </button>
+      </div>
+    </div>
+    <div class="card">
+      <img src="assets/img/l7.jpg" alt="Image 3">
+      <div class="card-content">
+        <h3>Produto 2</h3>
+        <p>Descrição do Produto 3</p>
+        <p class="price">R$ 9.99</p>
+        <button class="cart-button">
+          <i class="fas fa-cart-plus"></i> Adicionar ao Carrinho
+        </button>
+      </div>
+    </div>
+    <div class="card">
+      <img src="assets/img/l9.jpg" alt="Image 3">
+      <div class="card-content">
+        <h3>Produto 2</h3>
+        <p>Descrição do Produto 3</p>
+        <p class="price">R$ 9.99</p>
+        <button class="cart-button">
+          <i class="fas fa-cart-plus"></i> Adicionar ao Carrinho
+        </button>
+      </div>
+    </div>
+    <div class="card">
+      <img src="assets/img/l10.jpg" alt="Image 3">
+      <div class="card-content">
+        <h3>Produto 2</h3>
+        <p>Descrição do Produto 3</p>
+        <p class="price">R$ 9.99</p>
+        <button class="cart-button">
+          <i class="fas fa-cart-plus"></i> Adicionar ao Carrinho
+        </button>
+      </div>
+    </div>
+  </div>
+   
+
+
+    <script src="src/carrinho.js"></script>
+</body>
+</html>

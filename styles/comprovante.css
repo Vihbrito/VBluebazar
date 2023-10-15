@@ -1,0 +1,271 @@
+html, body {
+    height: 100%;
+    margin: 0;
+    padding: 0;
+    background: linear-gradient(180deg, #007fb6 0%, #007fb6 100%);
+}
+
+body {
+    background: linear-gradient(180deg, #000 0%, #007fb6 100%);
+    background-repeat: no-repeat;
+    background-size: cover; /* Isso fará com que o plano de fundo cubra toda a tela */
+    position: relative;
+}
+
+header {
+    background: linear-gradient(180deg, #007fb6 0%, #000 100%);
+    width: 100%;
+    height: 100px;
+    flex-shrink: 0;
+}
+
+.container {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+}
+
+
+@media screen and (max-width: 768px) {
+    .section {
+        flex: 1 1 100%;
+    }
+}
+
+.image-container {
+  position: absolute;
+  top: -25px;
+  left: 0;
+  width: 8%;
+}
+
+@media screen and (max-width: 598px) and (min-width: 300px) {
+    .image-container {
+      position: absolute;
+      top: -4%;
+      left: 0;
+      width: 35%;
+    }
+  
+    .blue {
+      max-width: 100%;
+      height: auto;
+    }
+    .user,
+    .cart {
+      margin-top: 8%;
+      margin-right: 3%;
+      width: 45px;
+    }
+  }
+  @media screen and (max-width: 599px) and (min-width: 500px) {
+    .image-container {
+      position: absolute;
+      top: -7%;
+      left: 0;
+      width: 35%;
+    }
+  
+    .blue {
+      max-width: 100%;
+      height: auto;
+    }
+  }
+  @media screen and (min-width: 600px) and (max-width: 689px) {
+    .image-container {
+      position: absolute;
+      top: -25px;
+      left: 0;
+      width: 20%;
+    }
+  
+    .blue {
+      max-width: 100%;
+      height: auto;
+    }
+    .user,
+    .cart {
+      margin-top: -2%;
+      margin-right: 3%;
+      width: 45px;
+    }
+  }
+  @media screen and (min-width: 689px) and (max-width: 800px) {
+    .image-container {
+      position: absolute;
+      top: -5px;
+      left: 0;
+      width: 15%;
+    }
+  
+    .blue {
+      max-width: 100%;
+      height: auto;
+    }
+    .user,
+    .cart {
+      margin-top: 2%;
+      margin-right: 3%;
+      width: 45px;
+    }
+  }
+  @media screen and (min-width: 801px) and (max-width: 900px) {
+    .image-container {
+      position: absolute;
+      top: -15px;
+      left: 0;
+      width: 15%;
+    }
+  
+    .blue {
+      max-width: 100%;
+      height: auto;
+    }
+    .user,
+    .cart {
+      margin-top: 2%;
+      margin-right: 3%;
+      width: 45px;
+    }
+  }
+  @media screen and (min-width: 901px) and (max-width: 1199px) {
+    .image-container {
+      position: absolute;
+      top: -25px;
+      left: 0;
+      width: 15%;
+    }
+  
+    .blue {
+      max-width: 100%;
+      height: auto;
+    }
+    .user,
+    .cart {
+      margin-top: 2%;
+      margin-right: 3%;
+      width: 45px;
+    }
+  }
+  @media screen and (min-width: 1200px) and (max-width: 1400px) {
+    .image-container {
+      position: absolute;
+      top: -45px;
+      left: 0;
+      width: 15%;
+    }
+  
+    .blue {
+      max-width: 100%;
+      height: auto;
+    }
+    .user,
+    .cart {
+      margin-top: 2%;
+      margin-right: 3%;
+      width: 45px;
+    }
+  }
+  @media screen and (min-width: 1401px) and (max-width: 1500px) {
+    .image-container {
+      position: absolute;
+      top: -55px;
+      left: 0;
+      width: 15%;
+    }
+  
+    .blue {
+      max-width: 100%;
+      height: auto;
+    }
+    .user,
+    .cart {
+      margin-top: 2%;
+      margin-right: 3%;
+      width: 45px;
+    }
+  }
+
+.blue {
+    max-width: 100%;
+    height: auto;
+  }
+  h1{
+    margin-left: 5px;
+    font-size: 25px;
+    text-shadow:0 0 4px rgb(54, 228, 255);
+    text-transform: uppercase;
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+    color: white;
+}
+h2{
+  margin-left: 5px;
+  font-size: 15px;
+  text-shadow:0 0 6px rgb(0, 0, 0);
+  text-transform: uppercase;
+  font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+  color: rgb(255, 0, 0);
+  margin-bottom: 20px;
+}
+.card {
+  font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+  color: #f9f9f9;
+  margin-left: 20px;
+  font-size: larger;
+  border: 5px outset #ccc;
+  padding: 20px;
+  border-radius: 5px;
+  box-shadow: 0 0 20px rgb(0, 0, 0);
+  background-color: #000000;
+}
+.card p {
+  margin: 5px 0;
+}
+
+.cap {
+  font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+  margin-top: 20px;
+  margin-left: 20px;
+  font-size: larger;
+  color: #f9f9f9;
+  padding: 2px;
+  border: 2px outset #2e2d2d;
+  cursor: pointer;
+  border-radius: 5px;
+  width: 100px;
+  box-shadow: 0 0 30px rgb(0, 0, 0);
+  background-color: #000000;
+  margin-bottom: 20px;
+}
+#download-link{
+  background-color: #ffffff;
+  padding: 3px;
+  border-radius: 5px;
+  width: 190px;
+  font-weight: bolder;
+  margin-left: 10px;
+}
+#elemento-para-capturar{
+  width: 520px;
+}
+.botao-compartilhar{
+  font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+  margin-left: 20px;
+  font-size: larger;
+  color: #000000;
+  padding: 2px;
+  border: 2px outset #4d1616;
+  cursor: pointer;
+  border-radius: 5px;
+  width: 150px;
+  box-shadow: 0 0 30px rgb(0, 0, 0);
+  background-color: #fd3030;
+  margin-bottom: 20px;
+}
+@media screen and (min-width: 301px) and (max-width: 900px) {
+
+  #elemento-para-capturar{
+    width: 90%;
+  }
+
+}

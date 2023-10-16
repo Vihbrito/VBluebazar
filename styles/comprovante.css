@@ -8,7 +8,7 @@ html, body {
 body {
     background: linear-gradient(180deg, #000 0%, #007fb6 100%);
     background-repeat: no-repeat;
-    background-size: cover; /* Isso fará com que o plano de fundo cubra toda a tela */
+    background-size: cover; 
     position: relative;
 }
 
@@ -212,11 +212,11 @@ h2{
   color: #f9f9f9;
   margin-left: 20px;
   font-size: larger;
-  border: 5px outset #ccc;
+  border: 2px outset #000000;
   padding: 20px;
   border-radius: 5px;
   box-shadow: 0 0 20px rgb(0, 0, 0);
-  background-color: #000000;
+  background: linear-gradient(180deg, #000 0%, #014d6e 100%);
 }
 .card p {
   margin: 5px 0;

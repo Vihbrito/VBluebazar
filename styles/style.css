@@ -113,7 +113,7 @@ p {
 @media screen and (max-width: 768px) {
   p {
     font-size: 24px;
-    top: calc(30% + 35%);
+    top: calc(10% + 35%);
     left: 50%;
   }
   .blue {

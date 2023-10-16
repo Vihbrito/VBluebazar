@@ -8,7 +8,7 @@ html, body {
 body {
     background: linear-gradient(180deg, #000 0%, #007fb6 100%);
     background-repeat: no-repeat;
-    background-size: cover; /* Isso fará com que o plano de fundo cubra toda a tela */
+    background-size: cover; 
     position: relative;
 }
 
@@ -33,7 +33,7 @@ header {
     text-align: center;
 }
 
-/* Regras de mídia queries para telas menores */
+
 @media screen and (max-width: 768px) {
     .section {
         flex: 1 1 100%;
@@ -53,18 +53,21 @@ header {
   }
   
 
-/* Estilos para o contêiner dos itens do carrinho */
+
 #itens-carrinho {
     margin-top: 20px;
 }
 
-/* Estilos para cada item do carrinho */
+
 .item-carrinho {
     display: flex;
+    background-color: #006188;
     align-items: center;
     margin-bottom: 10px;
-    border: 1px solid #ccc;
+    border: 2px outset #ffffff;
     padding: 10px;
+    border-radius: 5px;
+color: chartreuse;
 }
 
 .item-carrinho img {
@@ -78,14 +81,18 @@ header {
     font-weight: bold;
 }
 
-/* Estilos para o preço total */
+
 #total-carrinho {
     font-size: 24px;
     font-weight: bold;
     margin-top: 20px;
+    background: linear-gradient(180deg, #006fab 0%, #000000 100%);
+    border-width: 2px;
+    border-style: outset;
+    border-color: #000000;
 }
 
-/* Outros estilos de sua preferência */
+
 
 @media screen and (max-width: 598px) and (min-width: 300px) {
     .image-container {
@@ -160,16 +167,11 @@ select,
 textarea {
     width: 80%;
     padding: 10px;
-    border: 1px solid #ccc;
+    border: 2px solid #000000;
     border-radius: 5px;
     font-size: 16px;
 }
-h3{
-  color: red;
-  font-size: 25px;
-  text-shadow:  0 0 20px rgb(0, 0, 0); ;
-  
-}
+
 button {
   margin-top: 30px;
     background-color: #000000;
@@ -202,12 +204,16 @@ button:hover {
   background-color: #ffffff;
   border-radius: 10px;
   padding: 10px;
-  color: #001eff;
+  color: #1d38ff;
 }
 .epix{
-  background-color: #ffffff;
+  background-color: #000000;
   padding: 10px;
   width: 95%;
   font-size: large;
   font-weight: bolder;
+}
+
+.section{
+  color: #ffffff;
 }

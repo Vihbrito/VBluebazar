@@ -214,7 +214,6 @@ h2{
   font-size: larger;
   border: 2px outset #000000;
   padding: 20px;
-  border-radius: 5px;
   box-shadow: 0 0 20px rgb(0, 0, 0);
   background: linear-gradient(180deg, #000 0%, #014d6e 100%);
 }

@@ -16,12 +16,14 @@ header {
   background: linear-gradient(180deg, #007fb6 0%, #000 100%);
   width: 100%;
   height: 100px;
+  z-index: 1;
   flex-shrink: 0;
 }
-h4{
 
+h4{
+  font-family: "Lexend Giga";
   color: red;
-  font-size: 25px;
+  font-size: 15px;
   text-shadow:  0 0 20px rgb(0, 0, 0); ;
   
 }
@@ -232,6 +234,7 @@ h4{
 
 
 .card {
+  
   border-radius: 10px;
   border-style: outset;
   border-width: 3px;
@@ -255,7 +258,7 @@ h4{
 }
 
 .card-content {
-  background-color: #fff;
+  background: linear-gradient(180deg, #ffffff 0%, #424242 100%); 
   padding: 10px;
   text-align: center;
   height: 100%;
@@ -263,9 +266,20 @@ h4{
   flex-direction: column;
 }
 
+h3{
+  font-size: 13px;
+  font-family: "Lexend Giga";
+}
+.d{
+  font-family: "Lexend Giga";
+  color: blue;
+  margin-top: 5px;
+  font-size: 13px;
+  text-transform: uppercase;
+}
 .card-content h3 {
   margin: 0;
-  font-size: 18px;
+  
 }
 
 
@@ -297,20 +311,21 @@ h4{
 }
 
 .price {
-  color: #3fbf03;
+  font-size: 10px;
+  font-family: "Lexend Giga";
+  color: #319615;
   font-size: larger;
   font-weight: bolder;
   margin-bottom: 15px;
   position: absolute;
-  bottom: 40px; 
+  bottom: 70px; 
   left: 5px;
   right: 5px;
   text-align: center;
+ 
+
+
 }
-
-
-
-
 
 
 .carrinho {

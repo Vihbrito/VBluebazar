@@ -44,18 +44,40 @@ Esse é um projeto de E-commerce em desenvolvimento para o meu bazar pessoal já
 - `Funcionalidade 7`: Ao clicar em "finalizar compra" no checkout, você será direcionado para a página de resumo e pedidos.
 - `Funcionalidade 8`: Ao clicar em capturar, você pode tirar print do resumo das informações de pedido e compartilhar para o número exibido na tela por meio da api do navegador.
 
-**Site do Projeto:**
+  
+## Layout ou Deploy da Aplicação :dash:
 
+> Link do deploy da aplicação:
+https://652de409a256451e2e7cf632--bespoke-kitsune-5d7d83.netlify.app/catalogo.html
 
 
 # 📁 Acesso ao Projeto 
 
-Para acessar o projeto, você precisa fazer o download e descompactá-lo. Em seguida, abra a pasta onde estar o projeto no seu editor de texto.
+No terminal, clone o projeto: 
+```
+git clone https://github.com/Vihbrito/checklist/tree/main
+
+```
 
 # 🛠️ Abrir e Rodar o Projeto 
 
-Para que o projeto seja apresentado como está exemplificado no vídeo, é preciso  é preciso adicionar o comando "npm run dev" no seu terminal e Ctrl + click em cima do link Local.
+Esse projeto foi criado com o Vite, por isso, para que ele rode sem erros, é necessario criar o ambiente com ele. 
+No cmd, rodar cd + "caminho da pasta onde estão os arquivos" e digite o comando "npm create vite@latest". Em seguida, escolher o nome do projeto. Após isso, escolha a opção JavaScript (que foi usada para a construção desse projeto) e rode os comandos:
 
+cd "nome do projeto"
+npm install
+
+Em seguida, para rodar o projeto, é preciso adicionar o comando "npm run dev" no seu terminal e Ctrl + click em cima do link Local.
+Os arquivos serão automaticamente adicionadas à pasta onde está o seu projeto. Então, ao abrir seu editor de código, basta excluir os arquivos não utilizadas e substituí-los pelos arquivos desse projeto. 
+
+## Dependencias e libs utilizadas :books:
+◾ Vite: https://vitejs.dev/guide/  (para criar o projeto)
+
+◾Biblioteca html2canvas.js: https://html2canvas.hertzen.com (para adicionar aa funcionalidade de print) 
+ ```
+ No Terminal: npm install --save html2canvas
+
+```
 # Autora
 **Vitória Brito**
 <p align="start">

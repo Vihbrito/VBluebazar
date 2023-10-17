@@ -6,6 +6,7 @@ Meu bazar/E-commerce
 <img alt="logo" src="https://github.com/Vihbrito/VBlue.bazar/assets/142455532/fcda9122-48e9-40ed-a554-f5cecb995b83" style="width: 15%;" />
 </p> 
 
+<img src="https://img.shields.io/static/v1?label=Netlify&message=deploy&color=blue&style=for-the-badge&logo=netlify"/>
 
 <p align="center">
 <img loading="lazy" src="http://img.shields.io/static/v1?label=STATUS&message=EM%20DESENVOLVIMENTO&color=GREEN&style=for-the-badge"/>

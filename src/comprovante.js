@@ -31,7 +31,7 @@ const imagesToPreload = ["assets/img/Logo blue.PNG"];
 preloadImages(imagesToPreload, function () {
   document.getElementById("capturar").addEventListener("click", function () {
     alert(
-      "Encaminhar esses dados e o comprovante de PIX para o número (85) 997229859"
+      "Encaminhar esses dados e o comprovante de PIX para o número (85) 99999-9999"
     );
 
     const elementoParaCapturar = document.getElementById(

@@ -23,7 +23,7 @@ document.addEventListener("DOMContentLoaded", function () {
       totalCarrinho += priceNumber;
     });
 
-    if (totalCarrinho < 50) {
+    if (totalCarrinho < 80) {
       totalCarrinho += 10;
     }
 
